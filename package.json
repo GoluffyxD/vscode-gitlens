@@ -20,6 +20,7 @@
 	"engines": {
 		"vscode": "^1.51.0"
 	},
+	"enableProposedApi": true,
 	"main": "./dist/gitlens",
 	"icon": "images/gitlens-icon.png",
 	"preview": false,
@@ -3335,10 +3336,7 @@
 				"command": "gitlens.views.loadDetailsFromRemote",
 				"title": "Load Details from Remote",
 				"category": "GitLens",
-				"icon": {
-					"dark": "images/dark/icon-sync.svg",
-					"light": "images/light/icon-sync.svg"
-				}
+				"icon": "$(sync)"
 			},
 			{
 				"command": "gitlens.views.restore",
@@ -6796,12 +6794,12 @@
 				{
 					"command": "gitlens.views.stageFile",
 					"when": "!gitlens:readonly && viewItem =~ /gitlens:file\\b(?=.*?\\b\\+unstaged\\b)/",
-					"group": "inline@97"
+					"group": "inline@99"
 				},
 				{
 					"command": "gitlens.views.unstageFile",
 					"when": "!gitlens:readonly && viewItem =~ /gitlens:file\\b(?=.*?\\b\\+staged\\b)/",
-					"group": "inline@97"
+					"group": "inline@99"
 				},
 				{
 					"command": "gitlens.copyShaToClipboard",
